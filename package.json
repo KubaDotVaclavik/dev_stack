@@ -1,0 +1,11 @@
+{
+  "name": "dev_stack",
+  "version": "1.0.0",
+  "description": "Dev stack bootstrap including React, Redux, Gulp, Eslint etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kuba.vaclavik@gmail.com",
+  "license": "ISC"
+}
