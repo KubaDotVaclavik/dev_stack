@@ -1,14 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { changeVal } from './actions'
+import { fetchPlanets } from './actions'
 
-const Page = ({val, changeVal}) => <div>
+const Page = ({fetchPlanets}) => <div>
     <h1>Page section</h1>
-    <input value={val} onChange={changeVal}/>
+    <input type='button' value='Tlačitko na SW api' onClick={fetchPlanets}/>
 </div>;
 
-export default connect(state => ({
-    val: state.page.val
-}), { changeVal })(Page)
+export default connect(null, { fetchPlanets })(Page)
 
 

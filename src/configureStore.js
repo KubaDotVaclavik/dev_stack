@@ -20,7 +20,6 @@ const configureStore = (options = { initialState: {} }) => {
 
   loadStorage(store)
     .then((newState) => {
-      debugger;
       console.log('Loaded state:', newState)
     })
     .catch(() => console.log('Failed to load previous state'));

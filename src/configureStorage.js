@@ -4,7 +4,9 @@ import { createMiddleware, createLoader, LOAD } from 'redux-storage';
 
 const STORAGE_NS = 'redux-storage:appName';
 
-const engine = createEngine(STORAGE_NS); 
+const engine = createEngine(STORAGE_NS,
+  (key, value) => value,
+  (key, value) => value);
 
 export const loadStorage = createLoader(engine)
 

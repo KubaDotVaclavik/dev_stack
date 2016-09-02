@@ -1,10 +1,12 @@
 import createLoggerMiddleware from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 import configureStorage from './configureStorage';
+import apiMiddleware from './apiMiddleware'; 
 
 const configureMiddleware = () => {
   const middleware = [
     thunkMiddleware,
+    apiMiddleware
   ];
 
   const storageMiddleware = configureStorage();
