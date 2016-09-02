@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
         <div>
             <IndexLink
-              to="/home"
+              to="/"
               className={styles.link}
               activeClassName={styles.active}
             >
