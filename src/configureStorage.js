@@ -8,12 +8,12 @@ const engine = createEngine(STORAGE_NS,
   (key, value) => value,
   (key, value) => value);
 
-export const loadStorage = createLoader(engine)
+export const loadStorage = createLoader(engine);
 
 export const updateStateOnStorageLoad = reducer => (state, action) => {
   if (action.type === LOAD) {
     // state = updateState(state, action.payload);
-    state = Object.assign({}, state, action.payload)
+    state = Object.assign({}, state, action.payload);
   }
   return reducer(state, action);
 };

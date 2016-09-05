@@ -1,4 +1,4 @@
 import Page from './Page';
-import reducer from './reducer'
+import reducer from './reducer';
 
-export { Page, reducer};
+export { Page, reducer };

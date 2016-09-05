@@ -4,7 +4,7 @@ import { locationShape } from 'react-router';
 
 class App extends React.Component {
   render() {
-    const { location, children } = this.props;
+    const { children } = this.props;
 
     return (
       <div>
@@ -16,8 +16,7 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-  children: React.PropTypes.object.isRequired,
-  location: locationShape,
+  children: PropTypes.object.isRequired,
 };
 
 export default App;

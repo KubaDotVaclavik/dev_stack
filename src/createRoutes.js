@@ -1,4 +1,3 @@
-/* @flow weak */
 import React from 'react';
 import { IndexRoute, Route } from 'react-router';
 
@@ -8,21 +7,20 @@ import { Home } from './home';
 import { Page } from './page';
 
 
-
 const createRoutes = (getState) => {
-  const requireViewer = (nextState, replace) => {
-    if (getState().users.viewer) return;
-    replace({
-      pathname: '/signin',
-      state: { nextPathname: nextState.location.pathname },
-    });
-  };
+  // const requireViewer = (nextState, replace) => {
+  //   if (getState().users.viewer) return;
+  //   replace({
+  //     pathname: '/signin',
+  //     state: { nextPathname: nextState.location.pathname },
+  //   });
+  // };
 
   return (
     <Route component={App} path="/">
       <IndexRoute component={Home} />
       <Route component={Page} path="page" />
-      {/*<Route component={Home} path="home" />*/}
+      {/* <Route component={Home} path="home" />*/}
     </Route>
   );
 };
